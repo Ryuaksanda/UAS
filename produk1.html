@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+            }
+            header{
+                background-color: #111111;
+                padding: 1%;
+            }
+            .logo{
+                height: 5%; width: auto;
+                position: relative; left: 45%;
+            }
+            .menu{
+                padding: 1%;
+                font-family: sans-serif;
+            }
+            footer{
+                background-color: rgb(37, 36, 35);
+                padding: 1%;
+                position: relative;
+                top: 5%;
+            }
+            table{
+                color: white;
+                font-family: sans-serif;
+                position: relative;
+                left: 25%;
+            }
+            .control{
+                width: 10%; height: 75%;
+                background-color: rgb(226, 232, 240);
+                position: relative; left: 5%;
+                border: solid 1px black;
+            }
+            .preview{
+                width: 50%; height: 75%;
+                position: absolute; top: 20%; left: 25%;
+                opacity: 1;
+                transition-duration: 1s;
+            }
+            .preview:{
+                opacity: 0;
+            }
+            .gambar{
+                width: 75%; height: auto;
+            }
+            .detail{
+                background-color: rgb(37, 36, 35);
+                border-radius: 10px;
+                width: 25%; height: 75%;
+                position: absolute;
+                top: 20%; left: 70%;
+                color: white;
+                font-family: sans-serif;
+            }
+            .tombol{
+                background-color: rgb(205, 59, 55);
+                border-radius: 50px;
+                width: 80%; height: 10%;
+                position: absolute;
+                top: 20%; right: 10%;
+                opacity: 0.5;
+                transition-duration: 0.3s;
+            }
+            .tombol:hover{
+                opacity: 1;
+            }
+            b{
+                position: absolute;
+                top: 30%; left: 25%;
+            }
+            .deskripsi{
+                position: absolute;
+                top: 35%; padding: 5%;
+            }
+            h3{
+                position: absolute;
+                top: 30%; padding: 5%;
+            }
+            .icon1,.icon2,.icon3,.icon4{
+                padding: 10%;
+                cursor: pointer;
+                width: 72%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="https://www.freelogovectors.net/wp-content/uploads/2022/05/riot_games_logo_freelogovectors.net_.png">
+        </header>
+        <div class="menu">
+            <hr>
+            <p align="center"><a>Pakaian</a> | <a>Patung Figur</a> | <a>Aksesoris</a></p>
+            <hr>
+        </div>
+        <div class="control">
+            <img class="icon1" onclick="gambar1()" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt2c324d26163e9e64/62d99c67df0a3871e08a2196/2022_Promo_StarGuardian_Zoe_Ecomm_image01.png?auto=webp&width=96&quality=85"><br>
+            <img class="icon2" onclick="gambar2()" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltf5b0476532381493/62d99c845c954177895a94b1/2022_Promo_StarGuardian_Zoe_Ecomm_image04.png?auto=webp&width=96&quality=85"><br>
+            <img class="icon3" onclick="gambar3()" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt3ec3848210e933b4/62d99c8419ee366ebba5332e/2022_Promo_StarGuardian_Zoe_Ecomm_image05.png?auto=webp&width=96&quality=85"><br>
+            <img class="icon4" onclick="gambar4()" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltb5c3a7d317edfaf0/62d99c87a30ae37191c5faed/Copy_of_2022_Promo_StarGuardian_Zoe_Ecomm_image06.png?auto=webp&width=96&quality=85">
+        </div>
+        <div class="preview" id="preview">
+            <img class="gambar" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt2c324d26163e9e64/62d99c67df0a3871e08a2196/2022_Promo_StarGuardian_Zoe_Ecomm_image01.png">
+        </div>
+        <div class="detail">
+            <h2 align="center" style="padding: 5%;">Star Guardian Zoe 1/7 Scale Figure</h2>
+            <div class="tombol"><b>Rp 525.000 - Beli</b></div>
+            <h3>Deskripsi</h3>
+            <p class="deskripsi">Dipahat dengan cermat dalam semua energinya yang kacau dan berkilau, sosok Star Guardian Zoe skala 1/7 ini menangkap Lompatan Portal tengahnya. Dari kunci surgawinya yang mengalir ke media magisnya yang kacau, tidak ada detail yang tersisa dari mantan Star Guardian ini. Termasuk dudukan akrilik untuk ditampilkan dan dipajang di mana pun lubang dalam kenyataan mungkin terjadi.<br><br>Approximate Dimensions<br><br>Tinggi: 9,45 inci / 24 cm<br>
+                Diproduksi oleh Good Smile Arts Shanghai.</p>
+        </div>
+        <footer>
+            <table>
+                <tr>
+                    <td>Copyright Riot Games 2022</td>
+                    <td> | Cookie Policy</td>
+                    <td> | Terms & Conditions</td>
+                    <td> | Privacy Policy</td>
+                </tr>
+            </table>
+        </footer>
+        <script>
+            function gambar1(){
+                document.getElementById("preview").innerHTML='<img class="gambar" id="preview" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt2c324d26163e9e64/62d99c67df0a3871e08a2196/2022_Promo_StarGuardian_Zoe_Ecomm_image01.png">';
+            }
+            function gambar2(){
+                document.getElementById("preview").innerHTML='<img class="gambar" id="preview" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltf5b0476532381493/62d99c845c954177895a94b1/2022_Promo_StarGuardian_Zoe_Ecomm_image04.png">';
+            }
+            function gambar3(){
+                document.getElementById("preview").innerHTML='<img class="gambar" id="preview" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt3ec3848210e933b4/62d99c8419ee366ebba5332e/2022_Promo_StarGuardian_Zoe_Ecomm_image05.png">';
+            }
+            function gambar4(){
+                document.getElementById("preview").innerHTML='<img class="gambar" id="preview" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltb5c3a7d317edfaf0/62d99c87a30ae37191c5faed/Copy_of_2022_Promo_StarGuardian_Zoe_Ecomm_image06.png">';
+            }
+        </script>
+    </body>
+</html>
