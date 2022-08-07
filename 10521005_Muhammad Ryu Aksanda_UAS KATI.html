@@ -14,8 +14,9 @@
                 position: relative; left: 45%;
             }
             .menu{
-                padding: 1%;
+                padding-bottom: 1%; padding-top: 1%; margin-bottom: 1%;
                 font-family: sans-serif;
+                background-color: rgb(226, 232, 240);
             }
             footer{
                 background-color: rgb(37, 36, 35);
@@ -32,14 +33,14 @@
             .banner{
                 width: 80%;
                 position: relative;
-                left: 10%;
+                left: 10%; padding: 1%;
             }
             .abanner{
                 font-family: sans-serif;
                 background-color: white;
                 border-radius: 20px; border: solid 1px rgb(205, 59, 55);
                 width: 200px; height: 40px;
-                position: relative; left: 10%; top: 1%;
+                position: relative; left: 11%; top: 1%;
             }
             .abanner:hover{
                 background-color: rgb(205, 59, 55); color: white;
@@ -53,6 +54,21 @@
             .bannerbtn:hover{
                 color: white;
                 transition-duration: 0.5s;
+            }
+            @media only screen and (max-width: 1080px) {
+                .logo{
+                    width: 5%; height: auto;
+                }
+                .banner{
+                    width: 90%; height: auto;
+                    left: 5%;
+                }
+                .abanner{
+                    left: 5%;
+                }
+                footer{
+                    top: 65%;
+                }
             }
         </style>
     </head>
