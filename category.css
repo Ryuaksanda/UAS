@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+}
+header{
+    background-color: black;
+    padding: 1%;
+}
+.logo{
+    height: 5%; width: auto;
+    position: relative; left: 45%;
+}
+.menu{
+    padding-bottom: 1%; padding-top: 1%;
+    font-family: sans-serif; color: white;
+    background-color: rgb(37, 36, 35);
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(205, 59, 55);
+}
+footer{
+    background-color: rgb(37, 36, 35);
+    padding: 1%;
+    position: relative;
+    top: 75%;
+}
+table{
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    left: 25%;
+}
+.thumbnail{
+    position: absolute;
+    width: 100%;
+}
+.judul{
+    position: absolute;
+    top: 35%; left: 5%;
+    color: white;
+    font-family: sans-serif; font-size: 50px;
+}
+.badan{
+    width: 90%; height: 50%;
+    position: relative; left: 5%; top: 50%;
+    border-radius: 25px;
+    font-family: sans-serif;
+}
+.subadan{
+    width: 75%;
+}
+.produk1,.produk2{
+    background-color: rgb(226, 232, 240);
+    border-radius: 20px;
+}
+.jproduk1,.jproduk2{
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+@media only screen and (max-width: 1080px) {
+    header{
+        padding: 3%;
+    }
+    .logo{
+        width: 22%; height: auto; left: 40%;
+    }
+    .menu{
+        font-size: 175%;
+    }
+    table{
+        font-size: 165%;
+        left: 1%;
+    }
+    footer{
+        top: 36%;
+        padding: 2%;
+    }
+    .judul{
+        top: 15%;
+        font-size: 40px;
+    }
+    .badan{
+        top: 15%;
+        font-size: 200%;
+    }
+    .subadan{
+        width: 36%;
+    }
+    .jproduk1{
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+}
