@@ -61,6 +61,20 @@ table{
     padding-bottom: 1%;
     padding-top: 1%;
 }
+.kategori{
+    background-color: rgb(226, 232, 240);
+    position: absolute;
+    top: 70%;
+    padding: 1%;
+    width: 15%; height: 62%;
+    border-radius: 10px;
+}
+li{
+    padding: 3%;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+}
 @media only screen and (max-width: 1080px) {
     header{
         padding: 3%;
@@ -93,5 +107,12 @@ table{
     .jproduk1{
         padding-bottom: 5%;
         padding-top: 5%;
+    }
+    .kategori{
+        top: 24%;
+        width: 32%; height: 68%;
+    }
+    li{
+        font-size: 200%;
     }
 }
