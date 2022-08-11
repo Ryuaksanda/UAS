@@ -70,7 +70,7 @@ table{
 .tombol:hover{
     opacity: 1;
 }
-b{
+.htombol{
     position: absolute;
     top: 30%; left: 25%;
 }
@@ -151,7 +151,7 @@ h3{
         font-size: 200%;
         top: 25%;
     }
-    b{
+    .htombol{
         font-size: 250%;
     }
     .icon1,.icon2,.icon3,.icon4{
