@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+            }
+            header{
+                background-color: black;
+                padding: 1%;
+            }
+            .logo{
+                height: 5%; width: auto;
+                position: relative; left: 45%;
+            }
+            .menu{
+                padding-bottom: 1%; padding-top: 1%; margin-bottom: 1%;
+                font-family: sans-serif;
+                background-color: rgb(226, 232, 240);
+                font-weight: bold;
+            }
+            footer{
+                background-color: rgb(37, 36, 35);
+                padding: 1%;
+                position: relative;
+                top: 5%;
+            }
+            .puter{
+                color: white;
+                font-family: sans-serif;
+                position: relative;
+                left: 25%;
+            }
+            input{
+                margin: 10px;
+                padding: 2%;
+                width: 80%;
+                border-radius: 5px;
+                position: relative;
+                left: 8%;
+            }
+            .barang{
+                position: relative;
+                left: 8%;
+            }
+            b{
+                font-family: sans-serif;
+            }
+            .bayar{
+                background-color: rgb(226, 232, 240);
+                position: relative;
+                left: 25%;
+                width: 50%; height: 105%;
+            }
+            .produk{
+                position: absolute;
+                top: 75%; left: 22%;
+            }
+            .harga{
+                position: absolute;
+                top: 78%; left: 22%;
+            }
+            h1{
+                font-family: sans-serif;
+                position: relative; top: 1%;
+            }
+            .tombol{
+                background-color: rgb(205, 59, 55);
+                padding: 2%; width: 80%;
+                position: relative;
+                left: 8%; top: 0%;
+                border-radius: 50px;
+                color: white;
+                border: solid 1px rgb(205, 59, 55);
+                opacity: 0.5;
+            }
+            .tombol:hover{
+                opacity: 1;
+                transition: 0.5s;
+            }
+            .htombol{
+                position: relative;
+                left: 42%;
+                font-size: 150%;
+            }
+        </style>
+    </head>
+    <body onload="proses()">
+        <header>
+            <img class="logo" src="https://www.freelogovectors.net/wp-content/uploads/2022/05/riot_games_logo_freelogovectors.net_.png">
+        </header>
+        <div class="menu">
+            <p align="center"><a href="10521005_Muhammad%20Ryu%20Aksanda_UAS%20KATI.html">Home</a> | <a href="pakaian.html">Pakaian</a> | <a href="patung.html">Patung Figur</a> | <a>Aksesoris</a>| <a href="tentang.html">Tentang Kami</a></p>
+        </div>
+        <div class="bayar">
+            <h1 align="center">PEMBAYARAN</h1>
+            <form>
+                <input type="text" name="email" placeholder="Email"><br>
+                <input type="text" name="nama" placeholder="Nama Penerima"><br>
+                <input type="text" name="alamat" placeholder="Alamat"><br>
+                <input type="text" name="rtrw" placeholder="RT/RW"><br>
+                <input type="text" name="kota" placeholder="KOTA/KAB"><br>
+                <input type="text" name="pos" placeholder="Kode Pos"><br>
+                <input type="text" name="telp" placeholder="Nomor Telepon">
+            </form>
+            <div id="barang"></div>
+            <b id="produk" class="produk"></b>
+            <b id="harga" class="harga"></b>
+            <div class="tombol"><b class="htombol">Bayar</b></div>
+        </div>
+        <footer>
+            <table class="puter">
+                <tr>
+                    <td>Copyright Riot Games 2022</td>
+                    <td> | Cookie Policy</td>
+                    <td> | Terms & Conditions</td>
+                    <td> | Privacy Policy</td>
+                </tr>
+            </table>
+        </footer>
+        <script src="ryu.js"></script>
+    </body>
+</html>
