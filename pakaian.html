@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Pakaian | Riot Games Store</title>
+        <link rel="stylesheet" href="category.css">
+        <style>
+            .jaket{
+                position: absolute;
+                left: 25%;
+                top: 0%;
+                width: 22.7%;
+                height: 95%;
+                background-color: rgb(226, 232, 240);
+                border-radius: 20px;
+            }
+            .badan{
+                left: 20%; top: 53%;
+                width: 80%;
+            }
+            .produk2{
+                margin-top: 10%;
+            }
+            .jproduk2{
+                margin-top: 15%;
+            }
+            @media only screen and (max-width: 1080px){
+                .badan{
+                    top: 14.5%; left: 37%;
+                    width: 63%;
+                }
+                .jaket{
+                    left: 50%; 
+                    width: 46%; height: 40%;
+                }
+                .produk1{
+                    width: 125%;
+                }
+                .jproduk2{
+                    margin-top: 19%;
+                }
+                .produk2{
+                    margin-top: 10%;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="https://www.freelogovectors.net/wp-content/uploads/2022/05/riot_games_logo_freelogovectors.net_.png">
+        </header>
+        <div class="menu">
+            <p align="center"><a href="10521005_Muhammad%20Ryu%20Aksanda_UAS%20KATI.html">Home</a> | <a>Pakaian</a> | <a href="patung.html">Patung Figur</a> | <a href="aksesoris.html">Aksesoris</a>| <a href="tentang.html">Tentang Kami</a></p>
+        </div>
+        <div>
+            <img class="thumbnail" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt468e6836c084f555/607f3db36371c75a11ad9fc4/plp_Ekko_banner_1617x365.jpg.jpg?auto=webp&width=1349&quality=85">
+            <p class="judul"><b>Pakaian</b></p>
+        </div>
+        <div class="kategori">
+            <ul>
+                <li onclick="kaos()">Kaos</li>
+                <li onclick="jaket()">Hoodie & Jacket</li>
+            </ul>
+        </div>
+        <div class="badan">
+            <div class="subadan" id="subadan">
+                <div id="kaos">
+                    <a href="produk2.html"><img class="produk1" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blta244967b86e013f1/61d8c7e27a4c822370d49659/2021_SB_Promos_ecomm_thumb_AhriTee_2560x3200_01.png?auto=webp&width=244&quality=85"></a>
+                    <p class="jproduk1">Spirit Blossom Ahri Tee (Unisex)</p>
+                    <p style="color: rgb(101, 100, 98);">Rp 450.000</p>
+                </div>
+                <div class="jaket" id="jaket">
+                    <a href="produk3.html"><img class="produk2" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltca867f0a7ba22a29/62d99dcab08306768355bba1/2022_Promo_StarGuardian_Apparel_FiddlesticksHoodie_Ecomm_image01.png?auto=webp&width=244&quality=85"></a>
+                    <p class="jproduk2">Star Nemesis Reverse Thread Fiddlesticks Hoodie</p>
+                    <p style="color: rgb(101, 100, 98);">Rp 1.265.000</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <table>
+                <tr>
+                    <td>Copyright Riot Games 2022</td>
+                    <td> | Cookie Policy</td>
+                    <td> | Terms & Conditions</td>
+                    <td> | Privacy Policy</td>
+                </tr>
+            </table>
+        </footer>
+        <script>
+            function kaos(){
+                document.getElementById("subadan").innerHTML='<div id="kaos"><a href="produk2.html"><img class="produk1" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blta244967b86e013f1/61d8c7e27a4c822370d49659/2021_SB_Promos_ecomm_thumb_AhriTee_2560x3200_01.png?auto=webp&width=244&quality=85"></a><p class="jproduk1">Spirit Blossom Ahri Tee (Unisex)</p><p style="color: rgb(101, 100, 98);">Rp 450.000</p>';
+            }
+            function jaket(){
+                document.getElementById("subadan").innerHTML='<div class="jaket" id="jaket" style="left: 0%;"><a href="produk3.html"><img class="produk2" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltca867f0a7ba22a29/62d99dcab08306768355bba1/2022_Promo_StarGuardian_Apparel_FiddlesticksHoodie_Ecomm_image01.png?auto=webp&width=244&quality=85"></a><p class="jproduk2">Star Nemesis Reverse Thread Fiddlesticks Hoodie</p><p style="color: rgb(101, 100, 98);">Rp 1.265.000</p></div>';
+            }
+        </script>
+    </body>
+</html>

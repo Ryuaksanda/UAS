@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Aksesoris | Riot Games Store</title>
+        <link rel="stylesheet" href="category.css">
+        <style>
+            .jaket{
+                position: absolute;
+                left: 25%;
+                top: 0%;
+                width: 22.7%;
+                height: 95%;
+                background-color: rgb(226, 232, 240);
+                border-radius: 20px;
+            }
+            .badan{
+                left: 20%; top: 53%;
+                width: 80%;
+            }
+            .jproduk2{
+                margin-top: 3%;
+                margin-bottom: 2%;
+            }
+            @media only screen and (max-width: 1080px){
+                .badan{
+                    top: 14.5%; left: 37%;
+                    width: 63%;
+                }
+                .jaket{
+                    left: 50%; top: -3%;
+                    width: 46%; height: 0%;
+                }
+                .produk1{
+                    width: 125%;
+                }
+                .jproduk2{
+                    margin-top: 0%;
+                }
+                .produk2{
+                    margin-top: 10%;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="https://www.freelogovectors.net/wp-content/uploads/2022/05/riot_games_logo_freelogovectors.net_.png">
+        </header>
+        <div class="menu">
+            <p align="center"><a href="10521005_Muhammad%20Ryu%20Aksanda_UAS%20KATI.html">Home</a> | <a href="pakaian.html">Pakaian</a> | <a href="patung.html">Patung Figur</a> | <a>Aksesoris</a>| <a href="tentang.html">Tentang Kami</a></p>
+        </div>
+        <div>
+            <img class="thumbnail" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt11784e4d934870b8/607f3f6e26fd84453c017bf1/plp_Braum_banner_1617x365.jpg.jpg?auto=webp&width=1349&quality=85">
+            <p class="judul"><b>Aksesoris</b></p>
+        </div>
+        <div class="kategori">
+            <ul>
+                <li onclick="pakaian()">Aksesoris Pakaian</li>
+                <li onclick="komputer()">Aksesoris Komputer</li>
+            </ul>
+        </div>
+        <div class="badan">
+            <div class="subadan" id="subadan">
+                <div>
+                    <a href="produk4.html"><img class="produk1" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltfd9968f99831a0b9/5f90a7462f59ae27f3d631a4/XL_mousepad_00.png?auto=webp&width=244&quality=85"></a>
+                    <p class="jproduk1">K/DA ALL OUT XL Mousepad</p>
+                    <p style="color: rgb(101, 100, 98);">Rp 375.000</p>
+                </div>
+                <div class="jaket">
+                    <a href="produk5.html"><img class="produk2" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt2049d09b1c09c06c/5f90add04671ee30c68a0b15/Belt_Bag_01.png?auto=webp&width=244&quality=85"></a>
+                    <p class="jproduk2">K/DA ALL OUT Tas Sabuk</p>
+                    <p style="color: rgb(101, 100, 98);">Rp 670.000</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <table>
+                <tr>
+                    <td>Copyright Riot Games 2022</td>
+                    <td> | Cookie Policy</td>
+                    <td> | Terms & Conditions</td>
+                    <td> | Privacy Policy</td>
+                </tr>
+            </table>
+        </footer>
+        <script>
+            function pakaian(){
+                document.getElementById("subadan").innerHTML='<div class="jaket" id="jaket" style="left: 0%;"><a href="produk3.html"><img class="produk2" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt2049d09b1c09c06c/5f90add04671ee30c68a0b15/Belt_Bag_01.png?auto=webp&width=244&quality=85"></a><p class="jproduk2">K/DA ALL OUT Tas Sabuk</p><p style="color: rgb(101, 100, 98);">Rp 670.000</p></div>';
+            }
+            function komputer(){
+                document.getElementById("subadan").innerHTML='<div id="kaos"><a href="produk2.html"><img class="produk1" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltfd9968f99831a0b9/5f90a7462f59ae27f3d631a4/XL_mousepad_00.png?auto=webp&width=244&quality=85"></a><p class="jproduk1">K/DA ALL OUT XL Mousepad</p><p style="color: rgb(101, 100, 98);">Rp 375.000</p></div>';
+            }
+        </script>
+    </body>
+</html>
