@@ -68,10 +68,10 @@ table{
     padding: 1%;
     width: 15%; height: 62%;
     border-radius: 10px;
+    font-family: sans-serif;
 }
 li{
     padding: 3%;
-    font-family: sans-serif;
     cursor: pointer;
     font-weight: bold;
 }
@@ -113,6 +113,9 @@ li{
         width: 32%; height: 68%;
     }
     li{
+        font-size: 200%;
+    }
+    .kat{
         font-size: 200%;
     }
 }
