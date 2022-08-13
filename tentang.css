@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+}
+header{
+    background-color: black;
+    padding: 1%;
+}
+.logo{
+    height: 5%; width: auto;
+    position: relative; left: 45%;
+}
+.menu{
+    padding-bottom: 1%; padding-top: 1%;
+    font-family: sans-serif; color: white;
+    background-color: rgb(37, 36, 35);
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(205, 59, 55);
+}
+footer{
+    background-color: rgb(37, 36, 35);
+    padding: 1%;
+    position: relative;
+    top: 36.4%;
+}
+.tf{
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    left: 25%;
+}
+.pp{
+    width: 30%; height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 5px rgb(205, 59, 55);
+    margin-bottom: 3%; margin-top: 3%; margin-left: 5%;
+}
+.about{
+    font-family: sans-serif;
+    margin-left: 5%;
+}
+.allbout{
+    background-color: rgb(226, 232, 240);
+    width: 30%; height: 40%;
+    position: relative;
+    left: 30%; top: 17%;
+    border-radius: 25px;
+}
+@media only screen and (max-width: 1080px){
+    header{
+        padding: 3%;
+    }
+    .logo{
+        width: 22%; height: auto; left: 40%;
+    }
+    .menu{
+        font-size: 175%;
+    }
+    .tf{
+        font-size: 165%;
+        left: 1%;
+    }
+    footer{
+        top: 46%;
+        padding: 2%;
+    }
+    .allbout{
+        width: 80%;
+        left: 10%;
+    }
+    .about{
+        font-size: 200%;
+    }
+    .pp{
+        width: 50%;
+        margin-top: 6%;
+    }
+}

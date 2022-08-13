@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+}
+header{
+    background-color: black;
+    padding: 1%;
+}
+.logo{
+    height: 5%; width: auto;
+    position: relative; left: 45%;
+}
+.menu{
+    padding-bottom: 1%; padding-top: 1%; margin-bottom: 1%;
+    font-family: sans-serif;
+    background-color: rgb(226, 232, 240);
+    font-weight: bold; 
+}
+footer{
+    background-color: rgb(37, 36, 35);
+    padding: 1%;
+    position: relative;
+    top: 13.4%;
+}
+.puter{
+    color: white;
+    font-family: sans-serif;
+    position: relative; left: -10%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(205, 59, 55);
+}
+body{
+    font-family: sans-serif;
+}
+.logo2{
+    width: 25%; height: auto;
+    padding: 3%;
+    float: left;
+}
+.output{
+    width: 50%; height: 70%;
+    border-radius: 25px;
+    position: relative; left: 25%;
+}
+h1{
+    padding-top: 2%; padding-right: 2%;
+}
+h3{
+    margin-bottom: 5%; padding-right: 2%;
+}
+h1,h3{
+    display: flex;
+    justify-content: right;
+}
+.taw,.tt,.ta{
+    margin-bottom: 5%;
+    padding-left: 3%;
+}
+.note{
+    margin-left: 4%;
+}
+@media only screen and (max-width: 1080px){
+    header{
+        padding: 3%;
+    }
+    .logo{
+        width: 22%; height: auto; left: 40%;
+    }
+    .menu{
+        font-size: 175%;
+    }
+    .puter{
+        font-size: 165%;
+        left: 1%;
+    }
+    footer{
+        top: 16.5%;
+    }
+    .output{
+        width: 100%;
+        left: 0%; top: 15%;
+    }
+    .taw,.tt,.ta{
+        font-size: 175%;
+        margin-bottom: 5%;
+        padding-left: 2%;
+    }
+    .logo2{
+        width: 35%;
+        padding: 2%;
+    }
+    h1{
+        font-size: 300%;
+    }
+    h3{
+        font-size: 200%;
+    }
+    .note{
+        font-size: 150%;
+        margin-left: 2%;
+    }
+}

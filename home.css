@@ -59,6 +59,33 @@ table{
     color: white;
     transition-duration: 0.5s;
 }
+.produk{
+    margin: 3%; padding: 2%;
+    font-family: sans-serif;
+    width: 90%;
+    border: solid 1px rgb(226, 232, 240);
+}
+.produk1,.produk2,.produk4,.produk5{
+    background-color: rgb(226, 232, 240);
+    border-radius: 20px; margin-top: 2%;
+}
+.produk3{
+    width: 26%; height: auto;
+    border-radius: 20px;
+}
+.jproduk1,.jproduk2{
+    padding-top: 1%; padding-bottom: 0.5%;
+}
+.dproduk1,.dproduk2,.dproduk4{
+    margin-right: 10%; float: left; 
+}
+.dproduk4{
+    margin-top: 2%; margin-left: 0%;
+    position: relative; left: -35%;
+}
+.dproduk5{
+    position: relative; left: -30%;
+}
 @media only screen and (max-width: 1080px) {
     header{
         padding: 3%;
@@ -74,7 +101,7 @@ table{
         left: 1%;
     }
     footer{
-        top: 59.5%;
+        top: 0%;
         padding: 2%;
     }
     .banner{
@@ -89,5 +116,35 @@ table{
     .bannerbtn{
         font-size: 175%;
         left: 9%; 
+    }
+    .produk1,.produk2{
+        width: 100%;
+    }
+    .produk{
+        font-size: 200%;
+    }
+    .dproduk1,.dproduk3,.dproduk2,.dproduk5{
+        width: 40%; margin-left: 5%; margin-bottom: 3%;
+    }
+    .produk3{
+        width: 40%;
+    }
+    .produk4{
+        width: 100%;
+    }
+    .produk5{
+        width: 100%;
+    }
+    .dproduk2{
+        margin-top: 2%;
+    }
+    .dproduk5{
+        left: 0%; width: 40%;
+    }
+    .dproduk4{
+        left: 0%; width: 40%;
+    }
+    .dproduk1,.dproduk2,.dproduk4{
+        margin-right: 6%;
     }
 }

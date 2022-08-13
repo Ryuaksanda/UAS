@@ -9,10 +9,12 @@ function proses(){
         localStorage.setItem("icon",'<img class="barang" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blt2c324d26163e9e64/62d99c67df0a3871e08a2196/2022_Promo_StarGuardian_Zoe_Ecomm_image01.png?auto=webp&width=96&quality=85">');
     }
     else if(localStorage.getItem("np")=='Spirit Blossom Ahri Tee (Unisex)'){
+        document.getElementById("catatan").innerHTML='<input type="text" name="catatan" placeholder="Catatan (Ukuran, varian, dll)">';
         localStorage.setItem("hp",'Rp 450.000');
         localStorage.setItem("icon",'<img class="barang" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/blta244967b86e013f1/61d8c7e27a4c822370d49659/2021_SB_Promos_ecomm_thumb_AhriTee_2560x3200_01.png?auto=webp&width=96&quality=85">');
     }
     else if(localStorage.getItem("np")=='Star Nemesis Reverse Thread Fiddlesticks Hoodie'){
+        document.getElementById("catatan").innerHTML='<input type="text" name="catatan" placeholder="Catatan (Ukuran, varian, dll)">';
         localStorage.setItem("hp",'Rp 1.265.000');
         localStorage.setItem("icon",'<img class="barang" src="https://images.contentstack.io/v3/assets/blt5bbf09732528de36/bltca867f0a7ba22a29/62d99dcab08306768355bba1/2022_Promo_StarGuardian_Apparel_FiddlesticksHoodie_Ecomm_image01.png?auto=webp&width=96&quality=85">');
     }
@@ -33,8 +35,32 @@ function oper(){
     localStorage.setItem("nama",document.data.nama.value);
     localStorage.setItem("alamat",alamat);
     localStorage.setItem("nomor",Math.floor(Math.random()*100000));
-    if(document.data.alamat.value==""||document.data.kec.value==""||document.data.kota.value==""||document.data.pos.value==""||document.data.email.value==""||document.data.telp.value==""){
-        alert("Isi data dengan lengkap!");
+    var produk=localStorage.getItem("np");
+    if(document.data.catatan.value!=""){
+        produk=produk+"<br>  Catatan: "+document.data.catatan.value;
+        localStorage.setItem("produk",produk);
+    }
+    else localStorage.setItem("produk",localStorage.getItem("np"));
+    if(document.data.alamat.value==""){
+        alert("Alamat Wajib Di isi!");
+    }
+    else if(document.data.nama.value==""){
+        alert("Nama penerima wajib di isi!");
+    }
+    else if(document.data.kec.value==""){
+        alert("Kecamatan Wajib Di isi!");
+    }
+    else if(document.data.kota.value==""){
+        alert("Nama kota/kab Wajib Di isi!");
+    }
+    else if(document.data.pos.value==""){
+        alert("Kode pos Wajib Di isi!");
+    }
+    else if(document.data.email.value==""){
+        alert("Email pos Wajib Di isi!");
+    }
+    else if(document.data.telp.value==""){
+        alert("Nomor telepon pos Wajib Di isi!");
     }
     else window.open("invoice.html","_parent");
 }
@@ -62,7 +88,7 @@ function hasil(){
     document.getElementById("nama").innerHTML=": "+localStorage.getItem("nama");
     document.getElementById("tgl").innerHTML=": "+day+" "+month+" "+year;
     document.getElementById("alamat").innerHTML=": "+localStorage.getItem("alamat");
-    document.getElementById("np").innerHTML=": "+localStorage.getItem("np");
+    document.getElementById("np").innerHTML=": "+localStorage.getItem("produk");
     document.getElementById("hp").innerHTML=": "+localStorage.getItem("hp");
     document.getElementById("tt").innerHTML=": "+localStorage.getItem("hp");
 }
